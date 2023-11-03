@@ -6,7 +6,7 @@
 /* Copy from original at:  http://stackoverflow.com/a/13755911/5184480 */
 
 /**
- * Recursively stores each level in an array of strings for printing.
+ * print_t - Recursively stores each level in an array of strings for printing.
  *
  * @tree: Pointer to the node to print
  * @offset: Offset to print
@@ -44,7 +44,7 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 }
 
 /**
- * Measures the height of a binary tree
+ * size_t _height - Measures the height of a binary tree
  *
  * @tree: Pointer to the node to measures the height
  *
@@ -61,7 +61,7 @@ static size_t _height(const binary_tree_t *tree)
 }
 
 /**
- * Prints a binary tree
+ * binary_tree_print - Prints a binary tree
  *
  * @tree: Pointer to the root node of the tree to print
  */
