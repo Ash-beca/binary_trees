@@ -61,7 +61,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
-const binary_tree_t *second);
+		const binary_tree_t *second);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 levelorder_queue_t *create_node(binary_tree_t *node);
 void pint_push(binary_tree_t *node, levelorder_queue_t *head,
@@ -84,6 +84,5 @@ bst_t *bst_remove(bst_t *root, int value);
 bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
 bst_t *bst_delete(bst_t *root, bst_t *node);
 bst_t *inorder_successor(bst_t *root);
-
 
 #endif
