@@ -100,5 +100,17 @@ int successor(bst_t *node);
 void bal(avl_t **tree);
 avl_t *sorted_array_to_avl(int *array, size_t size);
 avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
+int binary_tree_is_heap(const binary_tree_t *tree);
+int check_parent(const binary_tree_t *tree);
+int binary_tree_is_complete(const binary_tree_t *tree);
+int tree_is_complete(const binary_tree_t *tree, int i, int cnodes);
+size_t binary_tree_size(const binary_tree_t *tree);
+heap_t *heap_insert(heap_t **root, int value);
+size_t binary_tree_size(const binary_tree_t *tree);
+heap_t *array_to_heap(int *array, size_t size);
+int heap_extract(heap_t **root);
+void recurse_extract(heap_t *tree);
+heap_t *max(heap_t *tree);
+
 
 #endif
