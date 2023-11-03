@@ -84,5 +84,21 @@ bst_t *bst_remove(bst_t *root, int value);
 bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
 bst_t *bst_delete(bst_t *root, bst_t *node);
 bst_t *inorder_successor(bst_t *root);
+int binary_tree_is_avl(const binary_tree_t *tree);
+int is_avl_helper(const binary_tree_t *tree, int lo, int hi);
+size_t height(const binary_tree_t *tree);
+avl_t *avl_insert(avl_t **tree, int value);
+avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,
+		avl_t **new, int value);
+int balance(const binary_tree_t *tree);
+size_t height(const binary_tree_t *tree);
+avl_t *array_to_avl(int *array, size_t size);
+avl_t *avl_remove(avl_t *root, int value);
+bst_t *bst_remove(bst_t *root, int value);
+int remove_type(bst_t *root);
+int successor(bst_t *node);
+void bal(avl_t **tree);
+avl_t *sorted_array_to_avl(int *array, size_t size);
+avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
 
 #endif
